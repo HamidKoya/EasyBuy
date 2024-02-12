@@ -16,9 +16,9 @@ router.route("/products").get(getAllProducts);
 
 router.route("/product/:id").get(getProductDetails);
 
-router.route("/product/review").post(isAuthenticatedUser, createProductReview);
+router.route("/review").put(isAuthenticatedUser, createProductReview);
 router
-  .route("/product/reviews")
+  .route("/reviews")
   .get(getProductReviews)
   .delete(isAuthenticatedUser, deleteReview);
 

@@ -5,9 +5,9 @@ module.exports = (err, req, res, next) => {
 
   //Mongodb ObjectId format Error
 
-  if (err.name === "CastError" && err.kind === "ObjectId") {
+  /*if (err.name === "CastError" || err.kind === "ObjectId") {
     err = errorHandler(400, "Resource not found. Invalid ObjectId format");
-  }
+  }*/
 
   //Mongoose duplicate Key error
 
