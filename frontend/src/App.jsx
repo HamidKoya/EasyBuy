@@ -1,8 +1,9 @@
 import React from "react";
-import Header from "./components/layout/Header/Header";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import Footer from "./components/layout/Footer/Footer";
-import Home from "./components/Home/Home";
+import Header from "./components/layout/Header";
+import Footer from "./components/layout/Footer";
+import Home from "./components/Home";
+
 
 const App = () => {
   return (
